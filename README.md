@@ -1,2 +1,2 @@
-# fetch-and-render
-Simple fetch and render proxy using iframes
+# Fetch & Render
+Simple fetch and render proxy using an iframe.
