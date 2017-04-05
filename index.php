@@ -2,7 +2,7 @@
 <head><title>Fetch &amp; Render Proxy</title>
 </head>
 
-<body>
+<body style="margin:0px;padding:0px">
 
 <?php
 
@@ -13,12 +13,13 @@ $type = isset($_GET['type']) ? $_GET['type'] : "desktop";
 
 $mobile = $type == "mobile";
 $width = $mobile ? 411 : 1024;
-$height = $mobile ? 731 : 768;
+$height = 10000;
 
-echo "Fetch &amp; Render of: $url (" . ucwords($type) . " @ $width x $height)<br><br>";
 ?>
 
-<iframe src="<?php echo $url; ?>" height='<?php echo $height; ?>' width='<?php echo $width; ?>'></iframe>
+<iframe src="<?php echo $url; ?>" frameborder="0" style="overflow:hidden;height:<?php echo $height;?>;width:<?php echo $width;?>" height="<?php echo $height;?>" width="<?php echo $width;?>"></iframe>
+
+</script>
 
 </body>
 
